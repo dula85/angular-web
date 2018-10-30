@@ -1,0 +1,6 @@
+<p>
+  assignment2
+</p>
+<input type="text" class="form-contorl" [(ngModel)]="userName"/>
+<p>UserName - {{ userName }}</p>
+<button class="btn btn-primary" (click)="onResetUserName()" [disabled]="!userName.length > 0">Reset</button>
