@@ -1,0 +1,8 @@
+<p>
+  assignment3
+</p>
+<button class="btn btn-primary" (click)="onToggle($event)">Toggle</button>
+<p *ngIf="!hideText">Dulanjalie Adhikari</p>
+<p *ngFor="let buttonClick of buttonClicks"
+[ngStyle]="{backgroundColor: getColor(buttonClick)}"
+[ngClass]="{largerThanFive: buttonClick > 5}">Click {{ buttonClick }}</p>
