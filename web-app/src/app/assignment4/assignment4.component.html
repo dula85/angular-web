@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-game-control (startGame)="onGameStart($event)"></app-game-control>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      <div *ngFor="let inputNumber of inputNumbers">
+        <div *ngIf="inputNumber%2==0">
+          <app-odd-numbers [inputNumber]="inputNumber"></app-odd-numbers>
+        </div>
+        <div *ngIf="inputNumber%2==1">
+          <app-even-numbers [inputNumber]="inputNumber"></app-even-numbers>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

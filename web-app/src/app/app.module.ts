@@ -11,6 +11,10 @@ import { Assignment2Component } from './assignment2/assignment2.component';
 import { Assignment3Component } from './assignment3/assignment3.component';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
+import { Assignment4Component } from './assignment4/assignment4.component';
+import { GameControlComponent } from './assignment4/game-control/game-control.component';
+import { OddNumbersComponent } from './assignment4/odd-numbers/odd-numbers.component';
+import { EvenNumbersComponent } from './assignment4/even-numbers/even-numbers.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { ServerElementComponent } from './server-element/server-element.componen
     Assignment2Component,
     Assignment3Component,
     CockpitComponent,
-    ServerElementComponent
+    ServerElementComponent,
+    Assignment4Component,
+    GameControlComponent,
+    OddNumbersComponent,
+    EvenNumbersComponent
   ],
   imports: [
     BrowserModule,
